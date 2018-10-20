@@ -1,0 +1,15 @@
+<testsuite name="Mocha Tests" tests="13" failures="0" errors="0" skipped="0" timestamp="Sat, 20 Oct 2018 18:35:59 GMT" time="0.009">
+<testcase classname="Transaction #toString" name="When we try to print a transactions" time="0.001"/>
+<testcase classname="billToTransactionConverter" name="When we try to convert a bill into transactions" time="0.001"/>
+<testcase classname="billToTransactionConverter" name="When we try to convert a bill into transactions where one attendee appears twice" time="0"/>
+<testcase classname="billToTransactionConverter" name="When we try to convert a bill into transactions and who paid the bill appears as one of the attendees" time="0"/>
+<testcase classname="billToTransactionConverter" name="When we try to convert a bill where the names are in lowercase" time="0.001"/>
+<testcase classname="groupTransactions" name="When we have 8 transactions and we want to group by debtor-&#x3E;creditor" time="0"/>
+<testcase classname="reduceBiDirectionalDebit" name="When we try to reduce the bi directional debits" time="0.001"/>
+<testcase classname="reduceTransactions" name="When we try to reduce the number of transactions" time="0.001"/>
+<testcase classname="capitalizeStr" name="When we try to capitalize a name" time="0"/>
+<testcase classname="capitalizeStr" name="When we try to capitalize a name that is already capitalized" time="0"/>
+<testcase classname="capitalizeStr" name="When we try to capitalize a name with some uppercase letters" time="0"/>
+<testcase classname="capitalizeStr" name="When we try to capitalize an empty string" time="0"/>
+<testcase classname="capitalizeStr" name="When we try to capitalize and the value is not a string" time="0"/>
+</testsuite>

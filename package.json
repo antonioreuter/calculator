@@ -1,0 +1,58 @@
+{
+  "name": "calculator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "sample.js",
+  "scripts": {
+    "start": "node src/app.js",
+    "test": "mocha --full-trace --bail --recursive test/",
+    "coverage": "nyc mocha --reporter xunit --reporter-options output=reports/test-results.xml --full-trace --bail --recursive test/",
+    "eslint": "eslint -c ./.eslintrc.yaml -f checkstyle -o reports/checkstyle.xml ./src/**/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/antonioreuter/calculator.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/antonioreuter/calculator/issues"
+  },
+  "homepage": "https://github.com/antonioreuter/calculator#readme",
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "chai-string": "^1.5.0",
+    "eslint": "^5.7.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jsx-a11y": "^6.1.2",
+    "eslint-plugin-react": "^7.11.1",
+    "mocha": "^5.2.0",
+    "nyc": "^13.1.0",
+    "sinon": "^7.0.0"
+  },
+  "nyc": {
+    "check-coverage": true,
+    "report-dir": "reports",
+    "lines": 90,
+    "statements": 90,
+    "functions": 90,
+    "branches": 80,
+    "include": [
+      "src/**/*.js"
+    ],
+    "extension": [
+      ".js"
+    ],
+    "reporter": [
+      "text",
+      "text-summary",
+      "cobertura",
+      "lcov",
+      "html",
+      "json"
+    ],
+    "sourceMap": true,
+    "instrument": true
+  }
+}
